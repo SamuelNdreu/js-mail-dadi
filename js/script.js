@@ -16,7 +16,7 @@ else {
     console.log("The Pc Has Won This Time!");
     userNumber.append(randomUserN);
     pcNumber.append(randomPcN);
-    diceResult.append("The Pc Has Won This Time!")
+    diceResult.append("The Pc Has Won This Time!");
 }
 
 console.log(randomUserN);
@@ -26,9 +26,21 @@ console.log(randomPcN);
 //? Chiedi all’utente la sua email, 
 //? controlla che sia nella lista di chi può accedere 
 //? stampa un messaggio appropriato sull’esito del controllo
-const emailArray = ["pigpack@mail.it", "samsuing@gmail.com", "samuel@hotmail.com", "pinpong@mail.net", "ww3war@mail.com", "giulia@gmail.it", "mercedesbenz@live.net", "v8engine@gmail.it", "prietro@gmail.com", "giulio@live.it"]
-const button = document.getElementById('button-addon2')
+const emailArray = ["pigpack@mail.it", "samsuing@gmail.com", "samuel@hotmail.com", "pinpong@mail.net", "ww3war@mail.com", "giulia@gmail.it", "mercedesbenz@live.net", "v8engine@gmail.it", "prietro@gmail.com", "giulio@live.it"];
+const button = document.getElementById('button-addon2');
 
+button.addEventListener("click", function () {
+    for (let i = 0; i < emailArray.length; i++) {
+    const emailElement = document.getElementById('email');
+    console.log(emailElement.value);
+    const result = document.getElementById('result');
 
-
-
+    if (emailArray.includes(emailElement.value)) {
+    console.log("email valida");
+    result.append("E-mail Valida ");
+    } else {
+    console.log("email non valida");
+    result.append("E-mail non Valida ");
+}
+}
+})
