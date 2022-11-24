@@ -26,7 +26,7 @@ console.log(randomPcN);
 //? Chiedi all’utente la sua email, 
 //? controlla che sia nella lista di chi può accedere 
 //? stampa un messaggio appropriato sull’esito del controllo
-const emailArray = ["pigpack@mail.it", "samsuing@gmail.com", "samuel@hotmail.com", "domenico@mail.net", "lorenzo@mail.com", "giulia@gmail.it", "mercedesbenz@live.net", "v8engine@gmail.it", "prietro@gmail.com", "giulio@live.it"]
+const emailArray = ["pigpack@mail.it", "samsuing@gmail.com", "samuel@hotmail.com", "pinpong@mail.net", "ww3war@mail.com", "giulia@gmail.it", "mercedesbenz@live.net", "v8engine@gmail.it", "prietro@gmail.com", "giulio@live.it"]
 const button = document.getElementById('button-addon2')
 
 
