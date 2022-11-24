@@ -14,7 +14,7 @@ if (randomUserN > randomPcN) {
 }
 else {
     console.log("The Pc Has Won This Time!");
-    userNumber.append(randomUserN);
+    
     pcNumber.append(randomPcN);
     diceResult.append("The Pc Has Won This Time!");
 }
@@ -37,7 +37,7 @@ button.addEventListener("click", function () {
 
         if (emailArray[i]==emailElement.value) {
             console.log("valid email");
-            result.append("valid email ");
+            result.append("not a valid email ");
         } else {
             console.log("not a valid email");
                 result.append("not a valid email ")
