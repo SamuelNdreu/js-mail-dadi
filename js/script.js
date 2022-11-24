@@ -36,11 +36,11 @@ button.addEventListener("click", function () {
     const result = document.getElementById('result');
 
     if (emailArray.includes(emailElement.value)) {
-    console.log("email valida");
-    result.append("E-mail Valida ");
+    console.log("valid email");
+    result.append("not a valid email ");
     } else {
-    console.log("email non valida");
-    result.append("E-mail non Valida ");
+    console.log("not a valid email");
+    result.append("not a valid email ");
 }
 }
 })
