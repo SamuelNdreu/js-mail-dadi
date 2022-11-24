@@ -1,6 +1,6 @@
 //* Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
-let randomUserN = Math.floor(Math.random() * 6);
-let randomPcN = Math.floor(Math.random() * 6);
+let randomUserN = Math.floor(Math.random() * 6)+ 1;
+let randomPcN = Math.floor(Math.random() * 6) + 1;
 const userNumber = document.getElementById('userNumber');
 const pcNumber = document.getElementById('pcNumber');
 const diceResult = document.getElementById('diceResult');
@@ -31,16 +31,16 @@ const button = document.getElementById('button-addon2');
 
 button.addEventListener("click", function () {
     for (let i = 0; i < emailArray.length; i++) {
-    const emailElement = document.getElementById('email');
-    console.log(emailElement.value);
-    const result = document.getElementById('result');
+        const emailElement = document.getElementById('email');
+        console.log(emailElement.value);
+        const result = document.getElementById('result');
 
-    if (emailArray.includes(emailElement.value)) {
-    console.log("valid email");
-    result.append("not a valid email ");
-    } else {
-    console.log("not a valid email");
-    result.append("not a valid email ");
-}
-}
+        if (emailArray[i]==emailElement.value) {
+            console.log("valid email");
+            result.append("valid email ");
+        } else {
+            console.log("not a valid email");
+                result.append("not a valid email ")
+        }
+    }
 })
